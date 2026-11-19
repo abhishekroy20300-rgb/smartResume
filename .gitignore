@@ -27,3 +27,10 @@ htmlcov/
 # Operating system files
 .DS_Store
 Thumbs.db
+# SmartResume database
+Backend/smartresume.db
+Backend/*.db
+
+# Python cache
+__pycache__/
+*.py[cod]

@@ -1,4 +1,3 @@
-
 from pydantic import BaseModel, Field
 from typing import Optional, List
 
@@ -17,5 +16,12 @@ class ResumeData(BaseModel):
 
     experience: List[str] = Field(default_factory=list)
 
+    projects: List[str] = Field(default_factory=list)
+
     experience_years: Optional[float] = None
- 
+
+    score: int = 0
+
+    maximum_score: int = 100
+
+    feedback: List[str] = Field(default_factory=list)
